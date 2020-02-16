@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestemmingen</title>
+    <link rel="stylesheet" href="CSS/bestemmingen.css">
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="JS/bestemmingen-detailed.js"></script>
+    <link rel="stylesheet" href="CSS/bestemmingen-detailed.css">
+</head>
+<body>
+<!--Header-->
+<div id="header"></div>
+<div class="background">
+    <div id="content">
+        <!--2 Column Layout-->
+        <div class="row">
+
+            <!--Right Column-->
+            <div class="column right">
+                <div>
+                    <img class="detailed-image" src="../Resources/example.jpg">
+                </div>
+                <div id="itemright">
+                    <h3 id="plaats" class="country-name"></h3>
+                    <p class="description country-name"></p>
+                    <h1 class="prijs"></h1>
+                    <button class="button" onclick="toevoegen()">Voeg toe aan interesses!</button>
+                </div>
+                <div class="information">
+
+                </div>
+            </div>
+
+            <!--Right Column-->
+
+        </div>
+        <!--2 Column Layout-->
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+<script src="JS/bestemmingen-detailed-after.js"></script>
+</html>

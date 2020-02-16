@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/contact.js"></script>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+<!--Header-->
+<div id="header"></div>
+<div id="content">
+    <div class="outer-box">
+        <div id="finished">
+            <h1 class="header3 outer-box">Contact</h1>
+            <p class="outer-box">Verstuurd!</p>
+            <p class="go-back"><a href="index.html">< Ga terug naar de home pagina</a></p>
+        </div>
+    </div>
+
+    <div id="content2">
+
+        <h1 class="header3 outer-box">Contact</h1>
+
+        <p class="outer-box" style="margin-top: 30px; margin-bottom: 25px">
+            Hier kunt u een klacht indienen als u tegen een probleem zit of iets dergelijks<br>
+            Wilt u direct contact opnemen met het bedrijf? <a class="link" href="https://www.corendon.nl/contact" target="_blank">Hier</a> kunt u contact opnemen.
+        </p>
+
+
+        <div class="outer-box" style="margin: 0 auto">
+            <div class="invoer">
+            <p class="kop">Voornaam</p>
+            <input type="text" name="firstname" value="" class="input">
+            <div class="error"></div>
+
+            <p class="kop">Achternaam</p>
+            <input type="text" name="lastname" value="" class="input">
+            <div class="error"></div>
+
+            <p class="kop">E-mail</p>
+            <input type="text" name="mail" value="" class="input">
+            <div class="error"></div>
+            </div>
+
+            <p class="kop">Soort probleem</p>
+            <select class="dropdown" name="problem">
+                <option value="niks">Kies een categorie</option>
+                <option value="web">Website</option>
+                <option value="chat">Chat</option>
+                <option value="booking">Boeken</option>
+                <option value="partner">Partner</option>
+                <option value="account">Account</option>
+                <option value="other">Anders</option>
+            </select>
+            <div class="error"></div>
+
+            <br>
+            <p class="kop">Beschrijving</p>
+            <textarea name="problem-desc" rows="10" cols="100%"></textarea>
+            <div class="error"></div>
+
+            <br>
+            <br><br>
+            <button onclick="verstuur()">Verstuur</button>
+        </div>
+        <!--Google maps-->
+        <!--<div class="mapouter outer-box" style="float: right"><div class="gmap_canvas"><iframe width="800" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=wbh&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div><style>.mapouter{text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}</style></div>-->
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+<script src="JS/contact-after.js"></script>
+</html>

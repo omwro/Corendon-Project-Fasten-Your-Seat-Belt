@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+    <!-- footer en header code -->
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/bestemmingen.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/chat.js"></script>
+
+    <!--link verwijst naar de css code waar alle css dingen staan -->
+    <link rel="stylesheet" type="text/css" href="CSS/chat.css">
+</head>
+<!-- hier begint de opbouw van de website -->
+<body>
+<div id="header"></div>
+<!--de gehele chatbox zelf -->
+<div class="background">
+    <div id="content">
+        <div class="vriendenlijst">
+            <a class="vrienden">Potential friends</a>
+            <!--<a href="potential-partners.html"><strong><span title="voeg een potentiele partner">+</span></strong></a>-->
+        </div>
+        <div class="chatbox">
+            <!--bij chatlogs komen de gesprekwolkjes -->
+            <div class="chatlogs">
+            </div>
+            <!--chat form is waar je als gebruiker kan typen en waar je het kan verzenden -->
+            <div class="chat-form">
+                <!--textarea is waar de gebruiker kan gaan typen -->
+                <input id="input">
+                <!--button (Verstuur is waar de verstuur knop zit) -->
+                <button id="verstuur" onclick="verstuur()">Verstuur</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- de footer van de website -->
+<div id="footer"></div>
+</body>

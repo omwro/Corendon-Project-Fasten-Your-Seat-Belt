@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Bestemmingen Admin</title>
+	<link rel="stylesheet" href="CSS/admin-bestemmingen.css">
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous">
+  		</script>
+  	<script type="text/javascript">
+  		$(document).ready(function() { $('#header').load('admin-header.html'); });
+  		</script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/admin-bestemmingen.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="content">
+		<div id="buttonbox"><a href="admin-bestemmingen-toevoegen.html" class="addbtn">Voeg een bestemming toe</a></div>
+		<div id="bestemmingbox"></div>
+	</div>
+</body>
+</html>

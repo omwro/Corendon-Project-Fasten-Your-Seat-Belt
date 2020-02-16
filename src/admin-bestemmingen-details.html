@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Bestemmingen Admin</title>
+    <link rel="stylesheet" href="CSS/admin-bestemmingen-details.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#header').load('admin-header.html');
+        });
+    </script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/admin-bestemmingen-details.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div id="content">
+    <!-- start content-->
+    <div class="images">
+        <div class="big-image"><img></div>
+        <!--<div class="tiny-image"><img src="../Resources/example.jpg"></div>-->
+        <!--<div class="tiny-image"><img src="../Resources/example.jpg"></div>-->
+        <!--<div class="tiny-image"><img src="../Resources/example.jpg"></div>-->
+        <!--<div class="tiny-image"><img src="../Resources/example.jpg"></div>-->
+    </div>
+    <div class="details">
+        <div class="top-details">
+            <div class="plaats"></div>
+            <div class="buttonbox"><a id="deletebtn" class="editbtn">Verwijderen</a></div>
+            <div class="buttonbox"><a href="admin-bestemmingen-bewerken.html" class="editbtn">Bewerken</a></div>
+            <div class="status">
+                <div class="popular">Popular</div>
+            </div>
+            <br><br><br>
+            <div class="land"></div>
+            <br>
+        </div>
+        <div class="bottom-details">
+            <br>
+            <div class="rating"></div>
+            <br>
+            <div class="price"></div>
+        </div>
+    </div>
+    <div class="bio">
+        Biografie:<br><br>
+    </div>
+    <!-- einde content-->
+</div>
+</body>
+<script src="JS/admin-bestemmingen-details-after.js"></script>
+</html>

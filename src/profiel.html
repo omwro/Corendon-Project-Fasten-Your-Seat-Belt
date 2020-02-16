@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+
+    <script src="JS/profiel.js"></script>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="CSS/profiel.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="background">
+    <div id="content" style="background-color: white; padding: 30px">
+        <div class="personal" style="width: 100%; margin-top: 10px">
+            <img id="profiel-foto" src="#" style="float: left; margin: 50px">
+            <div class="personalText">
+                <h1>Mijn profiel</h1>
+                <p style="margin: 0">
+                    <span class="soort">Naam: </span>
+                    <span id="naam"></span><br>
+                    <span class="soort">Leeftijd: </span>
+                    <span id="leeftijd"></span><br>
+                    <span class="soort">Woonplaats: </span>
+                    <span id="woonplaats" style="margin: 0"></span><br>
+                <div class="profile-button">
+                    <a href="profiel-edit.html">
+                        <button>Bewerk mijn pagina</button>
+                    </a>
+                </div>
+                    <!--<span class="soort">Telefoon: </span>
+                    <span id="telefoon"></span><br>
+                    <span class="soort">Status: </span>
+                    <span id="status"></span><br>-->
+            </div>
+            <div style="float: left; width: 40%; margin-left: 30px">
+            <h1>Over mijzelf</h1>
+            <div id="bio">
+            </div>
+            </div>
+        </div>
+        <div class="hobbies">
+            <h1>Hobbies</h1>
+        </div>
+        <div class="reisinformatie">
+            <h1>Geintereseerde bestemming</h1>
+            <p id="reisGegevens">
+                <span class="soort">Land: </span>
+                <span id="land"></span><br>
+                <span class="soort">Plaats: </span>
+                <span id="plaats"></span><br>
+                <!--<span class="soort">Vanaf: </span>
+                <span id="vanaf"></span><br>
+                <span class="soort">Tot: </span>
+                <span id="tot"></span><br>-->
+            </p>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+</body>
+</html>

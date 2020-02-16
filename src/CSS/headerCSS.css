@@ -1,0 +1,190 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    background-image: url("../Resources/strand.jpg"), url("../Resources/extendedstrand.jpg");
+    background-repeat: no-repeat,repeat;
+}
+#content{
+    width: 1250px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100%;
+}
+@media screen and (max-width: 1500px) {
+    #content{
+        width: 1000px;
+    }
+}
+
+a.dropdown-opties{
+    text-decoration: none;
+    color: black;
+}
+
+.banner-left{
+    float: left;
+    background-color: lightgrey;
+    height: 100%;
+    width: 15%;
+}
+.header {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    float: left;
+    /*position: fixed;
+    top: 0;*/
+}
+
+.navigation {
+    text-align: center;
+    background-color: #D81E05;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    /*position: fixed;
+    top: 100px;*/
+}
+.space{
+    width: 300px;
+    float: left;
+}
+
+#logo{
+    float: left;
+}
+
+.profile-icon {
+    float: left;
+    margin: 0;
+    padding: 7px;
+}
+
+.profile-naam{
+    height: 30px;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.naam a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+p.naam{
+    font-style: italic;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin: 5px 10px 20px;
+}
+
+.my-profile-dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #D81E05;
+    padding: 10px;
+    margin: 30px;
+    float: right;
+    min-width: 50px;
+    height: 25px;
+}
+.dropdown-content{
+    text-align: center;
+    position: static;
+    border-top: 3px solid #D81E05;
+    border-bottom: 3px solid red;
+    display: none;
+    background-color: whitesmoke;
+    margin-top: 32px;
+    min-width: 100px;
+    z-index: 1;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+}
+
+
+.my-profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-arrow{
+    margin: 0;
+    padding: 5px;
+    float: right;
+}
+
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.berichten-counter{
+    background-color: #B81A04;
+    float: right;
+    border-radius: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    margin-right: 40px;
+}
+
+
+.navigation li a {
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+}
+
+
+.navigation a:hover {
+    background-color: #B81A04;
+}
+
+a.dropdown-opties:hover{
+    color: #B81A04;
+}
+
+.navigation li{
+    display: inline;
+}
+#logo:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        height:50px;
+    }
+    .my-profile-dropdown{
+        padding: 5px;
+        height: 12px;
+    }
+    .navigation li a{
+        font-size: 5px;
+        padding: 5px;
+    }
+}

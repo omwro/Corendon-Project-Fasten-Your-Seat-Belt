@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Link to css document-->
+    <link rel="stylesheet" href="CSS/headerCSS.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script>
+        function logout() {
+            sessionStorage.clear();
+        }
+    </script>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+    <img id="logo" src="../Resources/Logo_Corendon_2017_RGB.jpg" width="230px" height="120px">
+</div>
+<!--Navbar-->
+<div class="navigation">
+    <ul>
+        <li class="leftside"><a href="admin-home.html"><i class="fas fa-home"></i></a></li>
+        <li class="leftside"><a href="admin-statistieken.html">GEBRUIKERS</a></li>
+        <li class="leftside"><a href="admin-statistieken1.html">PLAATSEN</a></li>
+        <li class="leftside"><a href="admin-statistieken2.html">LANDEN</a></li>
+        <li class="leftside"><a href="admin-bestemmingen.html">BESTEMMINGEN</a></li>
+        <li class="rightside"><a onclick="logout()" href="logIn.html">LOG OUT</a></li>
+    </ul>
+</div>
+<!--Place your content beneath this-->
+</body>
+</html>

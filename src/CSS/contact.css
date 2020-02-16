@@ -1,0 +1,129 @@
+body{
+    font-family: Arial;
+}
+
+
+#finished{
+    display: none;
+    margin: 0 auto;
+
+}
+
+.go-back{
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: lightgrey;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.5s;
+}
+
+.go-back a{
+    color: grey;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+.go-back a:hover{
+    color: black;
+}
+
+.error{
+    font-weight: bold;
+    font-style: italic;
+    color: #D81E05;
+    text-align: left;
+    margin: 0;
+}
+
+#content2{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.outer-box{
+    width: 80%;
+    text-align: left;
+    color: grey;
+    font-style: italic;
+    margin: 0 auto;
+}
+P.kop{
+    font-weight: bold;
+    color: dimgray;
+    margin-bottom: 5px;
+    font-style: normal;
+}
+.box {
+    width: 80%;
+    padding: 1em;
+}
+.header3{
+    font-style: italic;
+    font-size: 40px;
+    color: #D81E05;
+    text-align: left;
+}
+input {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    height: 40px;
+    font-size: large;
+    width: 40%;
+    outline: none;
+    margin: 0 auto 25px;
+}
+.dropdown {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    height: 40px;
+    font-size: large;
+    width: 25%;
+    outline: none;
+    margin: 0 auto 25px;
+    cursor: pointer;
+}
+
+.title{
+    background-color: white;
+    border-bottom: 5px solid #B81A04;
+    color: #B81A04;
+}
+
+button {
+    width: 80%;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    background-color: limegreen;
+    color: white;
+    margin: auto auto 20px;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    outline: none;
+    font-style: italic;
+
+}
+button:hover {
+    background-color: forestgreen;
+}
+
+.link{
+    color: #D81E05;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #B81A04;
+    text-decoration: underline;
+}
+

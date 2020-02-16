@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#header').load('header.html');
+        });
+        $(document).ready(function () {
+            $('#footer').load('footer.html');
+        });
+    </script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script>
+        databaseManager
+            .query("SELECT * FROM bestemmingen WHERE Populariteit = 5 LIMIT 3")
+            .done(function (data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                    $("#box-bestemmingen").append(
+                        "<a href='bestemmingen-detailed.html' onclick='f(" + data[i].BestemmingID + ")'>" +
+                        "<div class='card'>" +
+                        "<img class='location-image' src='Resources/Bestemmingsfoto/" + data[i].Foto + "'>" +
+                        "<h3 class='location-title'>" + data[i].Plaats + " / " + data[i].Land + "</h3>" +
+                        "<p class='location-rating'><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i></p>" +
+                        "<h1 class='location-price'>€" + data[i].Prijs + ",-</h1>" +
+                        "</div>" +
+                        "</a>");
+                }
+            });
+
+        function f(x) {
+            localStorage.setItem("BestemmingID", x);
+        }
+    </script>
+
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/bestemmingen.css">
+</head>
+
+<body>
+<div id="header"></div>
+<div class="background">
+    <div id="content">
+        <h1>Op zoek naar reisgezelschap?</h1>
+        <div class="box">
+            <p>
+                Ben je vaak op vakantie en heb je vaak last van eenzaamheid en heb je behoefte aan gezelschap  dan ben je bij de juiste adres.
+                Want wat wij aan te bieden hebben bij Corendon is niet alleen een mooie reis naar uw droombestemming, maar ook de mogelijk te reizen met een desbetreffende persoon die net als u gezelschap wilt bij zijn vakantie.
+            </p>
+            <p>
+                Wij als Corendon hebben veel meegemaakt dat we gezien worden als een vliegtuigmaatschappij die alleen vluchten regelt voor hun klanten.
+                Maar dat is niet alles, wij hebben gemerkt dat de hoeveelheid alleenstaande mensen fors toeneemt in Nederland en dat daarmee de drang naar gezelschap flink toeneemt.
+                Daarom willen wij als de  Corendon team graag op uw speciale vakantie gezelschap voor u regelen om zo toch nog een leuke vakantie te hebben en ook nog een vriend voor het leven te maken.
+            </p>
+        </div>
+        <!--Een extra stuk content dat snel navigeerd-->
+        <div class="box">
+            <h1>Snel navigeren</h1>
+            <!--Meer knoppen toegevogd/text kleiner-->
+            <div class="login" id="register"><a href="registreren.html">
+                <button><strong>Maak een account aan!</strong></button>
+            </a></div>
+            <div class="login"><a href="bestemmingen.html">
+                <button><strong>Kijk naar leuke bestemmingen!</strong></button>
+            </a></div>
+            <div class="login partner" id="partner"><a href="potential-partners.html">
+                <button id="partnerbtn"><strong>Zoek een partner!</strong></button>
+            </a></div>
+        </div>
+
+
+        <br><br>
+        <h1>Meest populaire bestemmingen</h1>
+        <div id="box-bestemmingen"></div>
+    </div>
+</div>
+<div id="footer"></div>
+<script>
+    if (sessionStorage.length >= 1) {
+        console.log("session is 1");
+        $("#register").hide();
+    }
+    console.log(sessionStorage);
+</script>
+</body>
+</html>

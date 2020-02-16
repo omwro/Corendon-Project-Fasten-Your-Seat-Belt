@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/profiel-edit.js"></script>
+    <link rel="stylesheet" href="CSS/profiel-edit.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="background">
+    <div id="content" style="display: table">
+        <div class="logo">
+            <i class="fas fa-user-edit fa-9x"></i>
+        </div>
+        <div class="outer-box error" style="margin-top: 25px">
+        </div>
+        <div class="outer-box">
+            <h3 style="margin-left: 10px">Algemeen</h3>
+            <div class="box">
+                Voornaam
+                <input type="text" class="inputs"><br>
+                Achternaam
+                <input type="text" class="inputs"><br>
+                <!--Leeftijd
+                <input type="text" class="inputs"><br>-->
+                Geslacht<br>
+                <select id="geslacht" style="margin: 5px">
+                    <option>Geslacht</option>
+                    <option class="keuze" value="Man">Man</option>
+                    <option class="keuze" value="Vrouw">Vrouw</option>
+                </select>
+            </div>
+            <div class="box">
+                Woonplaats
+                <input type="text" class="inputs"><br>
+                Land
+                <input type="text" class="inputs"><br>
+                <!--Telefoon
+                <input type="text" class="inputs"><br>-->
+            </div>
+            <div class="box">
+                <textarea class="bio" rows="11" cols="100%"></textarea>
+            </div>
+        </div>
+        <div class="outer-box">
+            <h3 style="margin-left: 10px; float: left; width: 100%;">Hobbies</h3>
+            <div class="box" id="hobbylist" style="height: 20%;">
+            </div>
+        </div>
+        <div class="outer-box">
+            <h3 style="margin-left: 10px; float: left; width: 100%;">Reis</h3>
+            <div id="reis" class="box">
+                <div id="bestemming"></div>
+                <button id="verwijderKnop" style="background-color: white; color: #B81A04; margin-top: 10px" onclick="verwijderReis()">Verwijder</button>
+            </div>
+        </div>
+
+        <div class="outer-box">
+            <h3 style="margin-left: 10px;  width: 25%;">Privacy</h3>
+            <select id="privacy">
+                <option value="empty">Kies hoe openbaar uw pagina mag zijn...</option>
+                <option class="keuze" value="low">Iedereen mag mijn pagina zien</option>
+                <option class="keuze" value="medium">Iedereen mag alleen mijn algemene informatie zien</option>
+                <option class="keuze" value="high">Ik laat mijn pagina alleen aan partners zien</option>
+            </select>
+        </div>
+        <div class="outer-box">
+            <a class="buttons" id="update">
+                <button type="button" onclick="update()" >Aanpassen</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

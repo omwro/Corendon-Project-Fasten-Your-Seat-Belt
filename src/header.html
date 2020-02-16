@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Link to css document-->
+    <link rel="stylesheet" href="CSS/headerCSS.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="JS/header.js"></script>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+    <div class="space">.</div>
+    <a href="index.html"><img id="logo" src="Resources/Logo_Corendon_2017_RGB.jpg" width="250px" height="120px" style="cursor: pointer;"></a>
+    <div class="my-profile-dropdown">
+        <div class="profile-icon">
+            <i class="fas fa-user" style="color:white;"></i>
+        </div>
+        <div class="profile-naam">
+            <p class="naam" ></p>
+        </div>
+        <div class="dropdown-arrow">
+            <i class="fas fa-sort-down" style="color:white;"></i>
+        </div>
+
+        <div class="dropdown-content">
+            <p><a class="dropdown-opties" href="profiel.html">Mijn profiel</a></p>
+            <p><a class="dropdown-opties" href="berichten.html">Berichten</a><span class="berichten-counter"></span></p>
+            <p><a class="dropdown-opties" href="chat.html">Chat</a></p>
+            <p><a class="dropdown-opties" href="index.html" onclick="logout()">Uitloggen</a></p>
+        </div>
+    </div>
+
+</div>
+<!--Navbar-->
+<div class="navigation">
+    <ul>
+        <li><a class="pagina" href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a class="pagina" href="bestemmingen.html">BESTEMMINGEN</a></li>
+        <li><a class="pagina" href="potential-partners.html">POTENTIAL PARTNERS</a></li>
+        <li><a class="pagina" href="contact.html">CONTACT</a></li>
+        <li><a class="pagina" href="help.html">HELP</a></li>
+    </ul>
+</div>
+</body>
+</html>

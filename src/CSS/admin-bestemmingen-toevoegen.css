@@ -1,0 +1,63 @@
+#content{
+	padding-top: 160px;
+	text-align: center;
+}
+#titel{
+	font-size: 36px;
+	font-weight: bold;
+}
+.box{
+	width: 500px;
+	display: inline-block;
+}
+.onderwerp{
+	text-align: left;
+}
+.onderwerpbox{
+	border: 1px solid;
+	min-height: 25px;
+	display: inline-block;
+}
+.itemleft, .itemright{
+	width: 229px;	
+	margin: 5px 10px 5px 10px;
+	float: left;
+	text-align: left;
+}
+.itemall{
+	width: 480px;	
+	margin: 5px 10px 5px 10px;
+	float: left;
+}
+.floatright{
+	float: right;
+	margin-left: 10px;
+}
+.itemright input[type="text"]{
+	width: 112px;
+}
+.parismap{
+	width: 480px;
+	height: 200px;
+}
+textarea{
+	resize: none;
+}
+.addbtn{
+	background-color: white;
+	color: #D81E05;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+   	border: 1px solid;
+   	width: 100%;
+   	padding: 12px 0px;
+    margin-right: 10px;
+}
+.parisimg img{
+	width: 430px;
+	margin: 5px 10px 5px 10px;
+	float: right;
+}

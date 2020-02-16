@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+}
+
+button{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: limegreen;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header3{
+    font-style: italic;
+    font-size: 40px;
+    color: #D81E05;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.outer-box{
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.personal {
+    line-height: 30px;
+    font-size: 20px;
+    float: left;
+    background-color: #D81E05;
+    color: white;
+    border-radius: 20px;
+    width: calc(100% - 525px);
+    margin-bottom: 10px;
+}
+
+.personalText{
+    float: left;
+}
+
+.personal img{
+    float: right;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.hobbies {
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    float: left;
+    height: 280px;
+    background-color: #D81E05;
+    width: 48%;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: white;
+
+}
+
+.hobbies h1 {
+    font-size: 30px;
+}
+
+.hobbies ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.reisinformatie {
+    padding-left: 5px;
+    line-height: 30px;
+    font-size: 20px;
+    height: 280px;
+    width: 49%;
+    float: left;
+    background-color: #D81E05;
+    color: white;
+    border-radius: 20px;
+}
+
+.reisinformatie h1 {
+    font-size: 30px;
+}
+
+.profile-button{
+    font-size: 25px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+
+
+.zin{
+    text-align: left;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: medium;
+}
+.verzoek-sturen{
+float: left;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#content{
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+    height: 100%;
+}
+
+.background{
+    background-image: url("../Resources/strand.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.soort{
+    font-weight: bold;
+    font-style: italic;
+}
+

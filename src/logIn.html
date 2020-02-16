@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login pagina</title>
+    <link rel="stylesheet" href="CSS/logInCSS.css">
+
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/logIn.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div class="background">
+<div id="content">
+    <!--User icon-->
+    <div class="user-logo">
+            <!--Input fields-->
+            <div class="outer-box"><h3 class="inloggen">Inloggen</h3></div>
+            <div class="outer-box"><p class="login-zin"> Log in met uw Corendon account</p></div>
+            <div id="error-message2" class="outer-box"></div>
+            <input type="text" style="margin-bottom: 40px;" onfocus="reset1()"  onclick="reset1()" value="E-mail" id="input1">
+            <div id="error-message" class="outer-box"></div>
+            <input type="text" style="margin-bottom: 40px" onfocus="reset2()" onclick="reset2()" value="Wachtwoord" id="input2">
+                <a class="buttons" id="login"><button type="button" onclick="login()">Inloggen</button></a>
+                <a class="buttons" id="adminlogin"><button type="button" onclick="adminlogin()">Inloggen als admin</button></a>
+            <p><a href="forgot-password.html" class="links">Wachtwoord vergeten?</a><br>
+                Nog geen account? <a href="registreren.html" class="links">Klik hier!</a></p>
+    </div>
+</div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

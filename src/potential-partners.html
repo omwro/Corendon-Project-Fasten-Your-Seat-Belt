@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Potentiele partners</title>
+
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/potential-partners.js"></script>
+    <script>
+
+        /*databaseManager
+            .query("SELECT Land, Plaats, Foto, BestemmingID FROM bestemmingen")
+            .done(function (data1) {
+                console.log(data1);
+                console.log("Succes");
+
+                databaseManager
+                    .query("SELECT Voornaam, Achternaam, GebruikerID FROM gebruikers")
+                    .done(function (data2) {
+                        console.log(data2);
+                        console.log("Succes2");
+
+                        databaseManager
+                            .query("SELECT Hobby,GebruikerID FROM hobbies")
+                            .done(function (data3) {
+                                console.log(data3);
+                                console.log("Succes3");
+
+                                for (var i = 0; i < data1.length; i++) {
+                                    $("#potential").append(
+                                        "<a href='foreign-profiel.html' onclick='f(" + data2[i].GebruikerID + ")'>" +
+                                        "<div class='card'>" +
+                                        "<img class = 'image' src=\"https://cateringopmaat.nl/wp-content/uploads/2017/08/blank-profile-picture-973460_1280.png\">\n" +
+                                        "<h2 class='name-age'>" + data2[i].Voornaam + " " + data2[i].Achternaam + "</h2>" +
+                                        "<h3 class='destination'>" + data1[i].Plaats + " / " + data1[i].Land + "</h3>" +
+                                        "<p class='interest'>" + data3[i].Hobby + "</p>" +
+                                        "</div>" +
+                                        "</a>");
+                                }
+                            });
+                    });
+            });*/
+    </script>
+    <link href="CSS/potential-partners.css" rel="stylesheet">
+</head>
+<body>
+<div id="header"></div>
+<div class="background">
+    <div id="content">
+        <div class="outer-box">
+            <!--
+            <div class="filterbar" style="margin-left:15px ">
+                <h3>Interesses</h3>
+                <select name="selectintresses" id="selectintresses">
+                    <option value="hobby's">Hobby's</option>
+                    <option value="wandelen">Wandelen</option>
+                    <option value="vissen">Vissen</option>
+                    <option value="touren">Touren</option>
+                </select>
+                <h3>Bestemmingen</h3>
+                <select name="selectintresses">
+                    <option value="parijs">Parijs</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="berlijn">Berlijn</option>
+                    <option value="instanbul">Instanbul</option>
+                </select>
+                <br><br>
+                <h3>Sorteer op:</h3>
+                <input type="checkbox" name="time-of-use" value="interest">Gezamelijke interesses<br>
+                <input type="checkbox" name="time-of-use" value="hood">In de buurt<br>
+                <input type="checkbox" name="time-of-use" value="younger">Jonger<br>
+                <input type="checkbox" name="time-of-use" value="older">Ouder<br>
+                <br>
+                <input type="submit" value="Filters toepassen" class="filter-button">
+            </div>
+            -->
+            <h1 class="header3" style="margin: 0">Potential Partners</h1>
+            <div id="potential"></div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

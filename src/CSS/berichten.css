@@ -1,0 +1,134 @@
+.background{
+    background-image: url("../Resources/strand.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#content{
+    height: 100%;
+    display: table;
+}
+.header3{
+    font-style: italic;
+    font-size: 40px;
+    color: #D81E05;
+}
+.outer-box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box{
+    width: 48%;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    height: 50%;
+}
+
+
+.benoemingZender{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    background-color: #B81A04;
+    color: white;
+}
+
+.benoemingOnderwerp{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    background-color: #B81A04;
+    color: white;
+
+}
+
+.benoemingContext{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    background-color: #B81A04;
+    color: white;
+}
+
+.sidebar {
+    float: left;
+    border: 2px solid black;
+    border-top: 10px solid #B81A04;
+    width: 100%;
+    height: 100%;
+    /*margin-top: 10px;
+    margin-left: 300px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.sidebar2 {
+
+    float: left;
+    border: 2px solid black;
+    border-top: 10px solid #B81A04;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 10px;
+     margin-left: 10px;
+     padding-left: 10px;
+     padding-right: 10px;*/
+}
+
+.sidebar2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.messagebox {
+    float: left;
+    border: 2px solid black;
+    border-top: 10px solid #B81A04;
+    width: 100%;
+    height: 100%;
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+    font-size: 20px;
+    text-align: left;
+    padding: 15px;
+}
+
+ a:hover{
+    color: #B81A04;
+}
+.zin{
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.title{
+    background-color: white;
+    border-bottom: 5px solid #B81A04;
+    color: #B81A04;
+}
+
+button{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: #D81E05;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+}
+

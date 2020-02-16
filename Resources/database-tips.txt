@@ -1,0 +1,15 @@
+Link de volgende in je <head>:
+<script src="JS/utils/sessionManager.js"></script>
+<script src="JS/utils/databaseManager.js"></script>
+<script src="JS/database.js"></script>
+
+
+Zo ziet bijvoorbeeld een Query request uit:
+databaseManager
+       	.query("SELECT * FROM gebruikers")
+       	.done(function(data) {
+       		console.log(data);
+       	})
+       	.fail(function(reason) {
+       		console.log(reason);
+       	});

@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+}
+
+
+.background{
+    background-image: url("../Resources/strand.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.error-message{
+    font-style: italic;
+    font-weight: bold;
+    color: #D81E05;
+    text-align: left;
+}
+
+#content{
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.outer-box{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.titel{
+    font-style: italic;
+    font-size: 40px;
+    color: #D81E05;
+}
+
+.sentence{
+    text-align: left;
+    color: grey;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#finished{
+    display: none;
+    margin: 0 auto;
+
+}
+
+
+input {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    height: 40px;
+    font-size: large;
+    width: 100%;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+select{
+    margin-bottom: 20px;
+}
+
+.date{
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-color: lightskyblue;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+select {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    height: 40px;
+    font-size: large;
+    width: 25%;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.3s;
+}
+
+select:focus{
+    border-color: lightskyblue;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+P.kop{
+    font-weight: bold;
+    color: dimgray;
+    margin-bottom: 5px;
+}
+
+.go-back{
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: lightgrey;
+    font-style: italic;
+    text-align: center;
+    transition: color 0.5s;
+}
+a{
+    transition: color 0.5s;
+}
+
+a:hover{
+    color: black;
+}
+
+
+button {
+    width: 80%;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    background-color: limegreen;
+    color: white;
+    margin: 40px auto 20px;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 10px;
+    font-style: italic;
+    transition: background-color 0.5s;
+    outline: none;
+}
+
+button:hover {
+    background-color: forestgreen;
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}

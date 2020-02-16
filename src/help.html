@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/help.js">
+    </script>
+    <link rel="stylesheet" href="CSS/help.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="background">
+    <div id="content">
+        <h1 class="outer-box header3" style="margin-bottom:40px">Help</h1>
+        <p class="outer-box sentence" >
+            Hier vindt u de meest gestelde vragen met antwoorden, ook wel de FAQ genoemd.<br>
+            Wilt u de handleiding voor het gebruik van de website? <a href="handleiding.html" class="handleiding-link">Klik hier!</a>
+
+        //search bar voor opzoeek van vragen.
+        <div class="search-container">
+            <input id="searchBar1" type="text" placeholder="Schrijf hier je vraag!" name="search" onchange=searchQuestion()>
+        </div>
+
+        </p>
+        <div id="questions">
+        </div>
+    </div>
+
+
+</div>
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registreren</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="JS/utils/sessionManager.js"></script>
+    <script src="JS/utils/databaseManager.js"></script>
+    <script src="JS/database.js"></script>
+    <script src="JS/registreren.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="CSS/registreren.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="background">
+    <div id="content">
+        <div class="outer-box">
+            <div id="finished">
+                <h3 class="titel">Registreren</h3>
+                <p class="sentence">Registratie voltooid!</p>
+                <p class="go-back"><a href="logIn.html">< Ga terug naar de login pagina</a></p>
+            </div>
+        </div>
+        <div id="content2">
+            <div class="outer-box">
+                <h3 class="titel">Registreren</h3>
+                <p class="kop">Aanhef</p>
+                <select class="select" id="aanhef">
+                    <option>Aanhef</option>
+                    <option>Man</option>
+                    <option>Vrouw</option>
+                </select>
+                <div class="error-message"></div>
+                <p class="kop">Voornaam</p>
+                <input type="text" class="input" id="voornaam">
+                <div class="error-message inputs"></div>
+                <p class="kop">Achternaam</p>
+                <input type="text" class="input" id="achternaam">
+                <div class="error-message inputs"></div>
+                <p class="kop">Geboortedatum</p>
+                <input type="date" class="date">
+                <div class="error-message"></div>
+                <p class="kop">E-mail</p>
+                <input type="text" class="input" id="email">
+                <div class="error-message inputs"></div>
+                <p class="kop">Wachtwoord</p>
+                <input type="text" class="input" id="wachtwoord">
+                <div class="error-message inputs"></div>
+                <p class="kop">Wachtwoord (herhalen)</p>
+                <input type="text" class="input">
+                <div class="error-message inputs"></div>
+                <p class="sentence" style="margin-top: 30px;">Door het aanmaken van uw account gaat u akkoord met onze
+                    Algemene Voorwaarden</p>
+            </div>
+            <button onclick="button()">Registreren</button>
+            <p class="go-back"><a href="logIn.html">< Ga terug naar de login pagina</a></p>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

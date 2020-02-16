@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Home Admin</title>
+	<link rel="stylesheet" href="CSS/admin-statistieken.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous">
+  		</script>
+	<script src="JS/utils/sessionManager.js"></script>
+	<script src="JS/utils/databaseManager.js"></script>
+	<script src="JS/database.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function() { $('#header').load('admin-header.html'); });
+  		</script>
+    <script src="JS/admin-statistieken.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="content">
+		<div id="onderwerp">Meest geregisteerde gebruikers</div>
+		<div id="chart_div"></div>
+	</div>
+</body>
+</html>

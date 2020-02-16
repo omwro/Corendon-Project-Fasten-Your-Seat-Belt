@@ -1,0 +1,155 @@
+body {
+    font-family: Arial;
+}
+
+#content {
+    display: table;
+    height: 100%;
+}
+
+#potential{
+    height: 100%;
+}
+.interest, .name{
+    text-align: center;
+}
+
+.outer-box{
+    margin: 0 auto;
+    width: 80%;
+}
+.header3{
+    font-style: italic;
+    font-size: 40px;
+    color: #D81E05;
+    text-align: center;
+}
+.zin{
+    text-align: left;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: medium;
+}
+
+.filterbar {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+a{
+    color: black;
+}
+
+.title{
+    text-align: center;
+    background-color: white;
+    border-bottom: 5px solid #B81A04;
+    color: #B81A04;
+
+}
+
+.mijn-gegevens-btn {
+    background-color: #D81E05;
+    border-radius: 5px ;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+}
+
+
+
+.card {
+    background: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 350px;
+    margin: 1rem;
+    width: 280px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.075s cubic-bezier(.25,.8,.25,1);
+    border: 3px solid white;
+    border-radius: 5px;
+    float: left;
+
+}
+
+.card:hover {
+    border-color: #B81A04;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+
+.name-age{
+    margin-left: 5px;
+    text-align: left;
+
+}
+.image{
+    display: block;
+    width: 100%;
+    height: 65%;
+}
+
+
+
+
+
+.filter-button{
+    margin: 10px;
+    background-color: lawngreen;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.filter-button:hover{
+    cursor: pointer;
+    background-color: limegreen;}
+
+#selectintresses{
+    width: 160px;
+    height: 30px;
+    font-size: 18px;
+}
+
+
+.mijn-gegevens-btn:hover {
+    cursor: pointer;
+    background-color: #B81A04;
+}
+
+
+button{
+    font-size: 25px;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    background-color: #D81E05;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #B81A04;
+}
